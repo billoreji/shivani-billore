@@ -301,7 +301,7 @@ function ProductDetail() {
         const existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
         
         // Check if the item with the same ID already exists in the cart
-        const existingItemIndex = existingCartItems.findIndex(item => item.id === filterdata[0].id);
+        const existingItemIndex  = existingCartItems.findIndex(item => item.id === filterdata[0].id);
     
         if (existingItemIndex !== -1) {
             // If the item exists, increment its count value
